@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Sistema Django SPL</title></head>
+<body>
+  <h1>Sistema de Gestión</h1>
+  <ul>
+    <li>Usuarios</li>
+    <li>Productos</li>
+    {% if ENABLE_REPORTS %}
+      <li><a href="/reportes/">Exportar reportes</a></li>
+    {% endif %}
+    {% if ENABLE_NOTIFICATIONS %}
+      <li><a href="/notificaciones/">Notificaciones</a></li>
+    {% endif %}
+  </ul>
+</body>
+</html>
